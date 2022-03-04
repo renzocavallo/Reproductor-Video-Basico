@@ -1,0 +1,21 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+#reproductor{
+    position: relative;
+    top: 100px;
+    width: 600px;
+    background-color: grey;
+}
+main nav button{
+    background-color: black;
+    color: white;
+}
+main nav{
+    display: flex;
+    justify-content:space-around;
+}
+#video{
+    width: 600px;
+}
