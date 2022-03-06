@@ -15,7 +15,53 @@ main nav button{
 main nav{
     display: flex;
     justify-content:space-around;
+    align-items: center;
 }
 #video{
     width: 600px;
+}
+ 
+.Volumen{
+    width: 34px;
+    height: 14px;
+    position: relative;
+    left: 70px;
+    display: flex;
+    justify-content:space-around;
+    transform: rotate(180deg);
+}
+
+.Volumen li{
+    border: 1px black solid;
+    list-style: none;
+    background-color: grey;
+}
+
+#Sound1{
+    width: 3px;
+    height: 6px;
+    
+}
+
+#Sound2{
+    width: 3px;
+    height: 8px;
+}
+
+#Sound3{
+    width: 3px;
+    height: 10px;
+
+}
+
+#Sound4{
+    width: 3px;
+    height: 12px;
+
+}
+
+#Sound5{
+    width: 3px;
+    height: 14px;
+
 }
