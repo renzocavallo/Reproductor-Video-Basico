@@ -4,6 +4,7 @@ var botonPlay = document.getElementById("btonPlay")
 var botonReload = document.getElementById("btonReload")
 var botonBigSmall = document.getElementById("btonBigSmall")
 var botonSound = document.getElementById("silenciar")
+var barrasVolumen = document.getElementById("volumen")
 var volumen1 = document.getElementById("Sound1")
 var volumen2 = document.getElementById("Sound2")
 var volumen3 = document.getElementById("Sound3")
@@ -34,14 +35,11 @@ botonReload.addEventListener("click",function(){
 botonSound.addEventListener("click",function(){
     if(botonSound.innerHTML != "NotSound"){
         botonSound.innerHTML = "NotSound"
+        barrasVolumen.style.visibility = "hidden"
         video.muted = true
-        volumen1.style.backgroundColor = "grey"
-        volumen2.style.backgroundColor = "grey"
-        volumen3.style.backgroundColor = "grey"
-        volumen4.style.backgroundColor = "grey"
-        volumen5.style.backgroundColor = "grey"
     }else{
         botonSound.innerHTML = "Sound"
+        barrasVolumen.style.visibility = "visible"
         video.muted = false
     }
 })
