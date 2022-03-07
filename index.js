@@ -10,6 +10,11 @@ var volumen3 = document.getElementById("Sound3")
 var volumen4 = document.getElementById("Sound4")
 var volumen5 = document.getElementById("Sound5")
 
+volumen1.style.backgroundColor = "black"
+volumen2.style.backgroundColor = "black"
+volumen3.style.backgroundColor = "black"
+video.volume = 0.4
+
 botonPlay.addEventListener("click",function(){
     if(botonPlay.innerHTML != "Pause"){
     botonPlay.innerHTML = "Pause"
@@ -55,6 +60,7 @@ volumen1.addEventListener("click",function(){
        volumen5.style.backgroundColor = "grey"
        }
     }else{
+    video.volume = 0.1
     volumen1.style.backgroundColor = "black"
     volumen2.style.backgroundColor = "grey"
     volumen3.style.backgroundColor = "grey"
@@ -76,6 +82,7 @@ volumen2.addEventListener("click",function(){
         volumen5.style.backgroundColor = "grey"
         }
     }else{
+    video.volume = 0.3
     volumen2.style.backgroundColor = "black"
     volumen1.style.backgroundColor = "black"
     volumen3.style.backgroundColor = "grey"
@@ -96,6 +103,7 @@ volumen3.addEventListener("click",function(){
         volumen5.style.backgroundColor = "grey"
         }
     }else{
+    video.volume = 0.4
     volumen3.style.backgroundColor = "black"
     volumen2.style.backgroundColor = "black"
     volumen1.style.backgroundColor = "black"
@@ -120,6 +128,7 @@ volumen4.addEventListener("click",function(){
         volumen1.style.backgroundColor = "black"    
         }
     }else{
+    video.volume = 0.5
     volumen5.style.backgroundColor = "grey"
     volumen4.style.backgroundColor = "black"
     volumen3.style.backgroundColor = "black"
