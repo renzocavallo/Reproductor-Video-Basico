@@ -151,11 +151,9 @@ volumen5.addEventListener("click",function(){
 botonBigSmall.addEventListener("click",function(){
     if(botonBigSmall.innerHTML != "[]"){
     botonBigSmall.innerHTML = "[]"
-    var x = 1.8
-    reproductor.style.transform = "scale(" + x +")"
+    reproductor.style.transform = "scale(" + 1.8 +")"
     }else{
         botonBigSmall.innerHTML = "[---]"
-        var x = 1
-        reproductor.style.transform = "scale(" + x +")"
+        reproductor.style.transform = "scale(" + 1 +")"
     }
 })
